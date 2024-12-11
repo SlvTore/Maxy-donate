@@ -1,0 +1,168 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f7fb;
+    color: #333;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(to right, #2949A8, #4A90E2, #72C6EF);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+/* Mission Section */
+.mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    gap: 40px;
+}
+
+.mission-section .who-we-are {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.mission-section .content {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mission-section .content h2 {
+    font-size: 2rem;
+    color: #2949A8;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.mission-section .content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.mission-section .image-slider {
+    flex: 1;
+    max-width: 50%;
+}
+
+.mission-section .image-slider .slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics Section */
+.stats-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.stat {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stat .icon {
+    font-size: 3rem;
+    color: #2949A8;
+    margin-bottom: 10px;
+}
+
+.stat h3 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.stat p {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 300;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    color: #2949A8;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.gallery {
+    display: flex;
+    overflow: hidden; 
+    gap: 15px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 280px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efek hover pada gambar */
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tombol navigasi galeri */
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.gallery-nav button {
+    background-color: #2949A8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 0 10px;
+    transition: background-color 0.3s;
+}
+
+.gallery-nav button:hover {
+    background-color: #72C6EF;
+}

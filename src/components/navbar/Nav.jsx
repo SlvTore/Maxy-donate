@@ -12,10 +12,6 @@ function Nav() {
                         <Link to="/" className="navbar-brand mb-0 h1 " >
                          <i className='fw-bold'>Maxy Donate</i> 
                         </Link>
-                        <div className='d-flex'>
-                            <button type='button' className='btn btn-outline-secondary btn-sm m-1'>Login</button>
-                            <button type='button' className='btn btn-dark btn-sm m-1'>Sign Up</button>
-                        </div>
                     </div>
                     
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,13 +24,13 @@ function Nav() {
                             <Link to="/" className="nav-link active" aria-current="page">Home</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to="/program" className="nav-link active" aria-current="page" >Program</Link>
+                            <Link to="/aboutus" className="nav-link active" aria-current="page">Tentang Kami</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to="/informasi" className="nav-link active" aria-current="page">Informasi</Link>
+                            <Link to="/login" className="btn btn-outline-secondary btn-sm m-1">Login</Link>
                             </li>
                             <li className="nav-item">
-                            <Link to="/kontak" className="nav-link active" aria-current="page">Kontak</Link>
+                            <Link to="/regist" className="btn btn-dark btn-sm m-1">Sign Up</Link>
                             </li>
                             
                         </ul>
