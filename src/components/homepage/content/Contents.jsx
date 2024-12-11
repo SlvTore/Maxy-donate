@@ -7,8 +7,8 @@ function Content() {
     return (
         <>
             <div className='m-program container-fluid my-5'>
-                <h1 className='text-center text-white'>
-                    <i>Program</i>
+                <h1 className='text-center text-white '>
+                    <i className=''>Program</i>
                 </h1>
                 <div className='row p-2'>
                     <div className='col-md-3 my-4'>

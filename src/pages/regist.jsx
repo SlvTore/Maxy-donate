@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Footer from "../components/homepage/footer/Footer";
+import { Link, useNavigate } from 'react-router-dom';
 
 const RegisterPage = () => {
   const [fullName, setFullName] = useState("");
@@ -10,6 +11,8 @@ const RegisterPage = () => {
     e.preventDefault();
     console.log("Nama Lengkap: ", fullName, "Email: ", email, "Password: ", password);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -96,6 +99,10 @@ const RegisterPage = () => {
               <button
                 type="submit"
                 className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-200"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/login');
+                }}
               >
                 Daftar
               </button>
