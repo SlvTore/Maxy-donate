@@ -7,6 +7,7 @@ import Userpage from './pages/userpage.jsx';
 import LoginPage from './pages/login.jsx';
 import AboutUs from './pages/tentangkami.jsx';
 import RegisterPage from './pages/regist.jsx';
+import Pembayaran from './pages/Pembayaran.jsx';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/aboutus' element={<AboutUs />} />
         <Route path='/regist' element={<RegisterPage />} />
+        <Route path='/Pembayaran' element={<Pembayaran />} />
       </Routes>
 
     </Router>
