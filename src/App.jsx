@@ -8,17 +8,20 @@ import Userpage from './pages/userpage.jsx';
 import LoginPage from './pages/login.jsx';
 import AboutUs from './pages/tentangkami.jsx';
 import RegisterPage from './pages/regist.jsx';
+import Pembayaran from './pages/Pembayaran.jsx';
+
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<><Nav /><Home /></>} />
-        <Route path="/homepage" element={<><Nav /><Home /></>} />
-        <Route path="/userpage" element={<><Navigation /><Userpage /></>} />
-        <Route path="/login" element={<><Nav /><LoginPage /></>} />
-        <Route path="/aboutus" element={<><Nav /><AboutUs /></>} />
-        <Route path="/regist" element={<><Nav /><RegisterPage /></>} />
+        <Route exact path="/" element={<><Nav /><Home /></>} />
+        <Route path='/homepage' element= {<><Nav /><Home /></>} />
+        <Route path='/userpage' element={<><Navigation /><Userpage /></>} />
+        <Route path='/login' element={<><Nav /><LoginPage /></>} />
+        <Route path='/aboutus' element={<><Nav /><AboutUs /></>} />
+        <Route path='/regist' element={<><Nav /><RegisterPage /></>} />
+        <Route path='/Pembayaran' element={<><Nav /><Pembayaran /></>} />
       </Routes>
     </Router>
   );
