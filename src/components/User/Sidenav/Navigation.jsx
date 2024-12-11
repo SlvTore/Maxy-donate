@@ -32,7 +32,7 @@ const Navigation = () => {
                 <Link to="/">Link</Link>
               </Nav.Item>
               <Nav.Item className='my-3'>
-                <Link to="/">Link</Link>
+                <Link to="/data_anggota">Anggota Tim</Link>
               </Nav.Item>
               <Nav.Item>
                 <Link to="/">Link</Link>
@@ -46,4 +46,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation;
+export default Navigation;
