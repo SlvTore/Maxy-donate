@@ -1,0 +1,44 @@
+body, h2, h4, label, button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Back button style */
+.btn-back {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1rem; 
+}
+
+/* Style for the donation amount input */
+.donation-input {
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 0; 
+}
+
+/* Centering the placeholder text */
+.donation-input::placeholder {
+    text-align: center; 
+    color: #A12222; 
+}
+
+/*  */
+.donation-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; /* Equivalent to Bootstrap's gap-3 */
+}
+
+.donation-btn {
+    border-radius: 0;
+    border: 1px solid black;
+    width: 140px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.donation-btn-active {
+    background-color: black;
+    color: white;
+}
