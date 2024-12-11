@@ -36,10 +36,7 @@ function Footer () {
                                    <Link to={"/"} className='text-white' style={{textDecoration: 'none', fontSize: '1.5rem'}}>Home</Link>
                                  </div>
                                  <div className='mx-5'>
-                                   <Link to={"#"} className='text-white' style={{textDecoration: 'none', fontSize: '1.5rem'}}>Informasi</Link>
-                                 </div>
-                                 <div className='mx-5'>
-                                   <Link to={"#"} className='text-white' style={{textDecoration: 'none', fontSize: '1.5rem'}}>Program</Link>
+                                   <Link to={"/aboutus"} className='text-white' style={{textDecoration: 'none', fontSize: '1.5rem'}}>Tentang Kami</Link>
                                  </div>
                                </div>
                             </div>

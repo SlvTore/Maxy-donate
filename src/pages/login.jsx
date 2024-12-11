@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Navigation from '../components/User/Sidenav/Navigation';
 import Footer from "../components/homepage/footer/Footer";
+import { Link, useNavigate } from 'react-router-dom';
+
 
 const LoginPage = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +12,8 @@ const LoginPage = () => {
     e.preventDefault();
     console.log("Email: ", email, "Password: ", password);
   };
+
+  const navigate = useNavigate();
 
   return (
     <>
@@ -76,12 +80,18 @@ const LoginPage = () => {
                   onChange={(e) => setPassword(e.target.value)}
                 />
               </div>
+              
               <button
                 type="submit"
                 className="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 rounded-md transition duration-200"
+                onClick={(e) => {
+                  e.preventDefault();
+                  navigate('/userpage');
+                }}
               >
                 Login
               </button>
+              
             </form>
             <div className="flex items-center justify-between mt-4">
               <hr className="flex-grow border-gray-300" />
