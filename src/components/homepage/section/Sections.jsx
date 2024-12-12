@@ -40,8 +40,8 @@ const Section = () => {
   };
 
   return (
-    <Container fluid style={{ backgroundColor: '#2949A8', padding: '20px', margin: '3em 0 5em 0' }}>
-      <h1 className='text-center text-white mb-3'>Apa Komentar Anak yang Terbantu?</h1>
+    <Container fluid style={{ backgroundColor: '#2949A8', padding: '20px', margin: ' 0' }}>
+      <h1 className='text-center text-white m-3'>Apa Komentar Anak yang Terbantu?</h1>
       <Row>
         <Col md={12}>
           <Slider {...settings}>

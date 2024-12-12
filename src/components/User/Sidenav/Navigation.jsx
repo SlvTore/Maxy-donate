@@ -45,10 +45,10 @@ const Navigation = () => {
           <img
             src="https://via.placeholder.com/40?text=IMG"
             alt="Profile Image"
-            className="rounded-circle"
+            className="rounded-circle mx-2"
             width="40"
             height="40"
-            className="mx-2"
+            
           />
         </Navbar.Brand>
       </Container>
