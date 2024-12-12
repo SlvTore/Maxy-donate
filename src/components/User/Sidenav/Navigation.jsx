@@ -21,7 +21,7 @@ const Navigation = () => {
             <Offcanvas.Title ><img src={require("../../../assets/Logo-maxy-round.png")}></img></Offcanvas.Title>
           </Offcanvas.Header>
           <Offcanvas.Body>
-            <Nav className="flex-column">
+            <Nav className="flex-column ">
               <Nav.Item >
                 <Link to='/'>Home</Link>
               </Nav.Item>
@@ -35,12 +35,22 @@ const Navigation = () => {
                 <Link to="/data_anggota">Anggota Tim</Link>
               </Nav.Item>
               <Nav.Item>
-                <Link to="/">Link</Link>
+                <Link to="/program">Program Lainnya</Link>
               </Nav.Item>
             </Nav>
           </Offcanvas.Body>
         </Offcanvas>
-        <Navbar.Brand href="#">Offcanvas navbar</Navbar.Brand>
+        <Navbar.Brand>
+         Hello, user.name
+          <img
+            src="https://via.placeholder.com/40?text=IMG"
+            alt="Profile Image"
+            className="rounded-circle"
+            width="40"
+            height="40"
+            className="mx-2"
+          />
+        </Navbar.Brand>
       </Container>
     </Navbar>
   );
