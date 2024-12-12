@@ -12,6 +12,7 @@ import Pembayaran from './pages/Pembayaran.jsx';
 import Anggota from './components/User/Anggota/data_anggota.jsx';
 
 
+
 function App() {
   return (
     <Router>
@@ -23,7 +24,7 @@ function App() {
         <Route path='/aboutus' element={<><Nav /><AboutUs /></>} />
         <Route path='/regist' element={<><Nav /><RegisterPage /></>} />
         <Route path='/Pembayaran' element={<><Nav /><Pembayaran /></>} />
-        <Route path='/data_anggota' element={<><Nav /><Anggota /></>} />
+        <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
       </Routes>
     </Router>
   );
