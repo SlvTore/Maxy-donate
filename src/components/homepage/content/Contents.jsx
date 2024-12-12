@@ -1,23 +1,50 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import Button from '@mui/material/Button';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import './content.css';
+import { useEffect } from 'react';
 import { ParallaxBanner, ParallaxBannerLayer, ParallaxProvider } from 'react-scroll-parallax';
 
 function Content() {
 
-    const handleClick = () => {
+    useEffect(() => {
+        AOS.init({ duration: 1000 });
+      }, []);
+
+  const handleClick = () => {
         window.location.href ="/pembayaran"
     }
     return (
-        <>
-            <div className='m-program container-fluid title'>
+        <>    
+                <ParallaxProvider>
+                <ParallaxBanner
+                    style={{ height: '200px' }}
+                    layers={[
+                        { image: require('../../../assets/group-of-little-asian-girl-enjoy-to-play-petanque-2023-11-27-05-28-46-utc.jpg'), 
+                          speed: -10,
+                            amount: 0.8,
+                            children:(<div className='overlay2'></div>),
+                         },
+                    ]}
+                >
+                    <div className="absolute inset-0 flex items-center justify-center " >
+                      <h1 className="text-8xl text-white bg-gray-100 font-thin p-0 text-center" style={{ marginTop: '75px' }}>
+                        Buatlah Perubahan Sekarang
+                      </h1>
+                      <button type="button" className="btn btn-outline-primary">Primary</button>
+                    </div>
+            </ParallaxBanner>
+            </ParallaxProvider>
+            <div className='m-program container-fluid title mt-0'>
                 <h1 className='text-center text-white '>
                     <i className='mb-0'>Program</i>
                 </h1>
                 <div className='row '>
                     <div className='col-md-3 '>
-                        <div className='card mb-5' style={{ width: "18rem" }}>
+                        <div className='card mb-5' style={{ width: "18rem" }} data-aos="flip-right" data-aos-delay="100">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/Maxy logo.png')} width={260} height={150}></img>
                             </div>
@@ -40,7 +67,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3 '>
-                        <div className='card' style={{ width: "18rem" }}>
+                        <div className='card' style={{ width: "18rem" }} data-aos="flip-right" data-aos-delay="200">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/Maxy logo.png')} width={260} height={150}></img>
                             </div>
@@ -63,7 +90,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3 '>
-                        <div className='card' style={{ width: "18rem" }}>
+                        <div className='card' style={{ width: "18rem" }} data-aos="flip-right" data-aos-delay="400">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/Maxy logo.png')} width={260} height={150}></img>
                             </div>
@@ -86,7 +113,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3'>
-                        <div className='card' style={{ width: "18rem" }}>
+                        <div className='card' style={{ width: "18rem" }} data-aos="flip-right" data-aos-delay="800">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/Maxy logo.png')} width={260} height={150}></img>
                             </div>
@@ -109,24 +136,25 @@ function Content() {
                     </div>
                 </div>
             </div>
-
             <ParallaxProvider>
             <ParallaxBanner
                 layers={[
                     { image: require('../../../assets/cheerful-elementary.jpg'), 
                       speed: -10,
                         amount: 0.8,
-                        children:(<div className='overlay'></div>),
+                        children:(<div className='overlay2'></div>),
                      },
                     
                 ]}
                 style={{height: '500px' }}
                 >
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <h1 className="text-8xl text-white bg-gray-100 font-thin p-2 text-center">Hello World!</h1>
+                  <h1 className="text-8xl text-white bg-gray-100 font-thin p-2 text-center">Informasi</h1>
+                  <p className="text-2xl text-white bg-gray-100 font-thin p-2 text-center informasi">kilo</p>
                 </div>
              </ParallaxBanner>
             </ParallaxProvider>
+        
         </>
        
     );
