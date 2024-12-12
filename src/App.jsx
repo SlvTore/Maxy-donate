@@ -14,6 +14,9 @@ import Pembayaran from './pages/Pembayaran.jsx';
 import Anggota from './components/User/Anggota/data_anggota.jsx';
 
 import Anggota from './components/User/Anggota/data_anggota.jsx';
+import Anggota from './components/User/Anggota/data_anggota.jsx';
+import Program from './pages/program.jsx';
+
 
 
 import KonfirmasiPembayaran from './pages/KonfirmasiPembayaran';
@@ -32,6 +35,8 @@ function App() {
         <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
         <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
         <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
+        <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
+        <Route path='/program' element={<><Navigation /><Program /></>} />
       </Routes>
     </Router> 
   );
