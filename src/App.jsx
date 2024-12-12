@@ -11,6 +11,9 @@ import LoginPage from './pages/login.jsx';
 import AboutUs from './pages/tentangkami.jsx';
 import RegisterPage from './pages/regist.jsx';
 import Pembayaran from './pages/Pembayaran.jsx';
+import Anggota from './components/User/Anggota/data_anggota.jsx';
+
+
 import KonfirmasiPembayaran from './pages/KonfirmasiPembayaran';
 
 function App() {
@@ -18,16 +21,17 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<><Nav /><Home /></>} />
-        <Route path='/homepage' element= {<><Nav /><Home /></>} />
+        <Route path='/homepage' element={<><Nav /><Home /></>} />
         <Route path='/userpage' element={<><Navigation /><Userpage /></>} />
         <Route path='/login' element={<><Nav /><LoginPage /></>} />
         <Route path='/aboutus' element={<><Nav /><AboutUs /></>} />
         <Route path='/regist' element={<><Nav /><RegisterPage /></>} />
         <Route path='/Pembayaran' element={<><Pembayaran /></>} />
         <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
-        </Routes>
-    </Router>
+        <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
+      </Routes>
+    </Router> 
   );
 }
 
-export default App;
+export default App;
