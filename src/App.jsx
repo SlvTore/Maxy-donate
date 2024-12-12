@@ -13,6 +13,8 @@ import RegisterPage from './pages/regist.jsx';
 import Pembayaran from './pages/Pembayaran.jsx';
 import Anggota from './components/User/Anggota/data_anggota.jsx';
 
+import Anggota from './components/User/Anggota/data_anggota.jsx';
+
 
 import KonfirmasiPembayaran from './pages/KonfirmasiPembayaran';
 
@@ -27,6 +29,7 @@ function App() {
         <Route path='/aboutus' element={<><Nav /><AboutUs /></>} />
         <Route path='/regist' element={<><Nav /><RegisterPage /></>} />
         <Route path='/Pembayaran' element={<><Pembayaran /></>} />
+        <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
         <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
         <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
       </Routes>
