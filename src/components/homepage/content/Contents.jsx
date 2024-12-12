@@ -4,6 +4,10 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 import './content.css';
 
 function Content() {
+
+    const handleClick = () => {
+        window.location.href ="/pembayaran"
+    }
     return (
         <>
             <div className='m-program container-fluid my-5'>
@@ -27,7 +31,7 @@ function Content() {
                                     <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: "70%"}}>70%</div>
                                     </div>
-                                    <button type="button" className="btn btn-dark btn-sm my-3
+                                    <button onClick={handleClick} type="button" className="btn btn-dark btn-sm my-3
                                     ">Donasi Sekarang</button>
                             </div>
                             </div>
@@ -50,7 +54,7 @@ function Content() {
                                     <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: "70%"}}>70%</div>
                                     </div>
-                                    <button type="button" className="btn btn-dark btn-sm my-3
+                                    <button onClick={handleClick} type="button" className="btn btn-dark btn-sm my-3
                                     ">Donasi Sekarang</button>
                             </div>
                             </div>
@@ -73,7 +77,7 @@ function Content() {
                                     <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: "70%"}}>70%</div>
                                     </div>
-                                    <button type="button" className="btn btn-dark btn-sm my-3
+                                    <button onClick={handleClick} type="button" className="btn btn-dark btn-sm my-3
                                     ">Donasi Sekarang</button>
                             </div>
                             </div>
@@ -96,7 +100,7 @@ function Content() {
                                     <div className="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
                                         <div className="progress-bar progress-bar-striped progress-bar-animated" style={{width: "70%"}}>70%</div>
                                     </div>
-                                    <button type="button" className="btn btn-dark btn-sm my-3
+                                    <button onClick={handleClick} type="button" className="btn btn-dark btn-sm my-3
                                     ">Donasi Sekarang</button>
                             </div>
                             </div>
