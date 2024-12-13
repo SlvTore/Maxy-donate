@@ -21,24 +21,23 @@ function Content() {
         <>    
                 <ParallaxProvider>
                 <ParallaxBanner
-                    style={{ height: '200px' }}
+                    style={{ height: '200px', marginTop: '50px' }}
                     layers={[
                         { image: require('../../../assets/group-of-little-asian-girl-enjoy-to-play-petanque-2023-11-27-05-28-46-utc.jpg'), 
                           speed: -10,
-                            amount: 0.8,
-                            children:(<div className='overlay2'></div>),
+                            amount: 0.4,
+                            children:(<div className='overlay1'></div>),
                          },
                     ]}
                 >
                     <div className="absolute inset-0 flex items-center justify-center " >
-                      <h1 className="text-8xl text-white bg-gray-100 font-thin p-0 text-center" style={{ marginTop: '75px' }}>
+                      <h1 className="text-8xl text-white bg-gray-100 font-thin text-center" style={{ marginTop: '75px' }}>
                         Buatlah Perubahan Sekarang
                       </h1>
-                      <button type="button" className="btn btn-outline-primary">Primary</button>
                     </div>
             </ParallaxBanner>
             </ParallaxProvider>
-            <div className='m-program container-fluid title mt-0'>
+            <div className='m-program container-fluid title'>
                 <h1 className='text-center text-white '>
                     <i className='mb-0'>Program</i>
                 </h1>
@@ -137,22 +136,31 @@ function Content() {
                 </div>
             </div>
             <ParallaxProvider>
-            <ParallaxBanner
+              <ParallaxBanner
                 layers={[
-                    { image: require('../../../assets/cheerful-elementary.jpg'), 
-                      speed: -10,
-                        amount: 0.8,
-                        children:(<div className='overlay2'></div>),
-                     },
-                    
+                  {
+                    image: require('../../../assets/cheerful-elementary.jpg'),
+                    speed: -10,
+                    amount: 0.8,
+                    children: <div className="overlay2"></div>,
+                  },
                 ]}
-                style={{height: '500px' }}
-                >
+                style={{ height: '500px' }}
+              >
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <h1 className="text-8xl text-white bg-gray-100 font-thin p-2 text-center">Informasi</h1>
-                  <p className="text-2xl text-white bg-gray-100 font-thin p-2 text-center informasi">kilo</p>
+                  <div className="row p-5 text-center d-flex align-items-center justify-content-cente" style={{ marginTop: '115px' }}>
+                    <div className="col-md-4">
+                      <img src={require('../../../assets/user icon.png')} alt="Icon 1" width={150} height={150}/>
+                    </div>
+                    <div className="col-md-4">
+                      <img src={require('../../../assets/love hand.png')} alt="Icon 2" width={150} height={150} />
+                    </div>
+                    <div className="col-md-4">
+                      <img src={require('../../../assets/shield icon.png')} alt="Icon 3" width={150} height={150} />
+                    </div>
+                  </div>
                 </div>
-             </ParallaxBanner>
+              </ParallaxBanner>
             </ParallaxProvider>
         
         </>
