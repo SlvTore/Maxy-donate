@@ -34,18 +34,28 @@ const FAQ = () => {
 
   return (
     <div className="container mt-5">
-      <h2 className="text-center mb-4">FAQ</h2>
+      {/* FAQ Title with bold and blue color */}
+      <h2 className="text-center mb-4" style={{ fontWeight: 'bold', color: '#0066cc' }}>
+        FAQ
+      </h2>
+
       {faqData.map((faq, index) => (
         <Card key={index} className="mb-3 shadow-sm">
           <Card.Header>
             <h5 className="mb-0">{faq.question}</h5>
+            {/* Toggle Button */}
             <Button
               variant="link"
               onClick={() => handleToggle(index)}
               aria-expanded={open[index]}
               className="float-end text-decoration-none"
+              style={{ padding: '0.375rem', fontSize: '1.2rem' }} // Make button padding and font size more consistent
             >
-              {open[index] ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
+              {open[index] ? (
+                <ChevronUp size={20} />
+              ) : (
+                <ChevronDown size={20} />
+              )}
             </Button>
           </Card.Header>
           <Card.Body>

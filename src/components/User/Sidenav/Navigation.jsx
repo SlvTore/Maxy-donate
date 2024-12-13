@@ -18,7 +18,14 @@ const Navigation = () => {
         </Button>
         <Offcanvas show={show} onHide={handleClose} placement="start" >
           <Offcanvas.Header closeButton className='d-flex justify-content-center align-items-center text-center'>
-            <Offcanvas.Title ><img src={require("../../../assets/Logo-maxy-round.png")}></img></Offcanvas.Title>
+          <Offcanvas.Title>
+              <img
+                src={require("../../../assets/logodonate.png")}
+                alt="Logo"
+                width="120" 
+              />
+          </Offcanvas.Title>
+
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="flex-column ">
