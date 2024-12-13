@@ -39,8 +39,11 @@ function Nav() {
                             <li className="nav-item me-4">
                                 <Link to="/aboutus" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover " aria-current="page" style={{ color: '#2c3e50' }}>Tentang Kami</Link>
                             </li>
+                            <li className="nav-item me-4">
+                                <Link to="/artikel" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover " aria-current="page" style={{ color: '#2c3e50' }}>Artikel</Link>
+                            </li>
                             <li className="nav-item">
-                                <Link to="/informasi" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" style={{ color: '#2c3e50' }}>informasi</Link>
+                                <Link to="/informasi" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" style={{ color: '#2c3e50' }}>Informasi</Link>
                             </li>
                         </ul>
                     </div>

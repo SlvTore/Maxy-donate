@@ -15,6 +15,7 @@ import Anggota from './components/User/Anggota/data_anggota.jsx';
 import Program from './pages/program.jsx';
 import Informasi from './pages/informasi.jsx';
 import DataPrograms from './pages/dataprograms.jsx';
+import Artikel from './pages/artikel.jsx';
 
 
 
@@ -36,6 +37,7 @@ function App() {
         <Route path='/dataprograms' element={<><Navigation /><DataPrograms /></>} />
         <Route path='/program' element={<><Navigation /><Program /></>} />
         <Route path='/informasi' element={<><Nav /><Informasi /></>} />
+        <Route path='/artikel' element={<><Nav /><Artikel /></>} />
 
       </Routes>
     </Router> 
