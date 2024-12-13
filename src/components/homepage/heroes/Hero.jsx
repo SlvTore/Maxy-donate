@@ -16,7 +16,7 @@ function Hero() {
             <div className="container col-xxl-8 px-1 py-1 hero-content" style={{ zIndex: 1 }}>
                 <div className="row flex-lg-row align-items-center g-5 ">
                     <div className="col-10 col-sm-8 col-lg-6">
-                        <h1 className="display-5 fw-bold lh-1 mb-5 ms-0 mt-5">
+                        <h1 className="display-4 fw-bold lh-1 mb-4 ms-0 mt-5">
                             Platform Pendanaan Pendidikan Desentralisasi
                         </h1>
                         <p className="lead">
