@@ -39,11 +39,9 @@ function Nav() {
                                 <Link to="/aboutus" className="nav-link active" aria-current="page" style={{ color: '#2c3e50' }}>Tentang Kami</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/login" className="btn btn-outline-secondary btn-sm m-1">Login</Link>
+                            <Link to="/informasi" className="nav-link" aria-current="page">informasi</Link>
                             </li>
-                            <li className="nav-item">
-                                <Link to="/regist" className="btn btn-dark btn-sm m-1">Sign Up</Link>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>

@@ -21,13 +21,12 @@ function Footer() {
   <footer>
     <article>
       <h2>Got our latest news.</h2>
-      <button>
-        <p>Sign up free</p>
+      <button type="button" className='d-flex justify-content-center align-items-center'>
+        <p style={{ marginTop: '15px' }}>Sign up free</p>
         <span className="material-symbols-outlined"> trending_flat </span>
       </button>
     </article>
     <section className="top">
-    
       <ul>
         <li>
           <h3>Kontak</h3>

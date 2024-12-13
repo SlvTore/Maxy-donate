@@ -33,39 +33,47 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="container mt-5">
-      {/* FAQ Title with bold and blue color */}
-      <h2 className="text-center mb-4" style={{ fontWeight: 'bold', color: '#0066cc' }}>
-        FAQ
-      </h2>
-
-      {faqData.map((faq, index) => (
-        <Card key={index} className="mb-3 shadow-sm">
-          <Card.Header>
-            <h5 className="mb-0">{faq.question}</h5>
-            {/* Toggle Button */}
-            <Button
-              variant="link"
-              onClick={() => handleToggle(index)}
-              aria-expanded={open[index]}
-              className="float-end text-decoration-none"
-              style={{ padding: '0.375rem', fontSize: '1.2rem' }} // Make button padding and font size more consistent
-            >
-              {open[index] ? (
-                <ChevronUp size={20} />
-              ) : (
-                <ChevronDown size={20} />
-              )}
-            </Button>
-          </Card.Header>
-          <Card.Body>
-            <Collapse in={open[index]}>
-              <div>{faq.answer}</div>
-            </Collapse>
-          </Card.Body>
-        </Card>
-      ))}
+    <div>
+        <h1 className='text-center my-5'>Frequently Asked Questions</h1>
+        <div className="container mt-0 mb-5 accordion m" id="accordionExample">
+          <div className="accordion-item">
+          <h2 className="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Website Apakah ini?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            Halaman kami merupakan website pendanaan pendidikan yang dipersilakan untuk membantu anak-anak yang kurang mampu untuk terus belajar.
+         </div>
+      </div>
+   </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Mengapa harus menggunakan website ini?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Website  kami menawarkan berbagai macam pilihan pendanaan pendidikan yang dapat membantu anak-anak yang kurang mampu untuk terus belajar.
+      </div>
     </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        Apakah ada biaya untuk menggunakan website ini?
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        Tidak ada biaya untuk menggunakan website kami. Kami merupakan perusahaan non-profit yang membantu anak-anak yang kurang mampu untuk terus belajar.
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
   );
 };
 
