@@ -42,7 +42,7 @@ function Content() {
                 </h1>
                 <div className='row d-flex justify-content-center px-5'>
                     <div className='col-md-3 '>
-                        <div className='card mb-5' style={{ width: "16rem", height: "36rem" }} data-aos="fade-out" data-aos-delay="100">
+                        <div className='card mb-5' style={{ width: "16rem", height: "36rem" }} data-aos="fade-up" data-aos-delay="100">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/donasi1.jpg')} width={230} height={150}></img>
                             </div>
@@ -65,7 +65,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3 '>
-                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-out" data-aos-delay="200">
+                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-up" data-aos-delay="200">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/donasi2.jpg')} width={230} height={150}></img>
                             </div>
@@ -88,7 +88,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3 '>
-                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-out" data-aos-delay="200">
+                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-up" data-aos-delay="200">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/donasi2.jpg')} width={230} height={150}></img>
                             </div>
@@ -112,7 +112,7 @@ function Content() {
                     </div>
 
                     <div className='col-md-3'>
-                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-out" data-aos-delay="800">
+                        <div className='card' style={{ width: "16rem", height: "36rem" }} data-aos="fade-up" data-aos-delay="300">
                             <div className='container my-3'>
                                 <img src={require('../../../assets/donasi4.jpg')} width={230} height={150}></img>
                             </div>

@@ -38,6 +38,9 @@ const Navigation = () => {
               <Nav.Item>
                 <Link to="/userpage">Data Transaksi</Link>
               </Nav.Item>
+              <Nav.Item className='mt-3'>
+                <Link to="/dataprograms">Data Programs</Link>
+              </Nav.Item>
               <Nav.Item className='my-3'>
                 <Link to="/data_anggota">Anggota Tim</Link>
               </Nav.Item>
