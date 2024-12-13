@@ -26,7 +26,7 @@ const Section = () => {
     { id: 1, name: 'John Doe', text: 'Terima kasih atas donasinya, kini saya bisa belajar dengan tenang tanpa khawatir biaya pendidikan.', rating: 5 },
     { id: 2, name: 'Jane Doe', text: 'Bantuan ini sangat berarti bagi saya, terima kasih telah membantu mewujudkan mimpi saya untuk terus belajar.', rating: 4 },
     { id: 3, name: 'Bob Smith', text: 'Dukungan ini memberikan saya semangat baru untuk mengejar cita-cita saya. Terima kasih dari hati terdalam.', rating: 5 },
-    { id: 4, name: 'Alice Johnson', text: 'Saya sangat bersyukur atas kebaikan Anda, donasi ini telah meringankan beban pendidikan saya.', rating: 4 },
+    { id: 4, name: 'Alice Joe', text: 'Saya sangat bersyukur atas kebaikan Anda, donasi ini telah meringankan beban pendidikan saya.', rating: 4 },
   ];
 
   const renderStars = (rating) => {
@@ -40,28 +40,32 @@ const Section = () => {
   };
 
   return (
-    <Container fluid style={{ backgroundColor: '#2949A8', padding: '20px', margin: ' 0' }}>
-      <h1 className='text-center text-white m-3'>Apa Komentar Anak yang Terbantu?</h1>
+    <Container  style={{ backgroundColor: '#2949A8', padding: '60px', maxWidth: '100%' }}>
+      <h1 className='text-center text-white mt-5'>Apa Komentar Anak yang Terbantu?</h1>
       <Row>
         <Col md={12}>
-          <Slider {...settings}>
+          <Slider {...settings}
+          >
+            
             {testimonials.map((testimonial, index) => (
               <div key={testimonial.id}>
                 <Card
                   style={{
                     width: '18rem',
-                    margin: '10px',
+                    margin: '15px',
+                    transition: 'transform 0.3s ease-in-out',
                     transform: activeIndex === index ? 'scale(1.2)' : 'scale(1)',
+                    borderRadius: activeIndex === index ? '0px' : '0px',
                     opacity: activeIndex === index ? 1 : 0.5,
                   }}
-                  className='p-3 my-3'
+                  className='p-5 my-3'
                 >
                   <Card.Body>
                     <div style={{ display: 'flex', alignItems: 'center' }}>
                       <div
                         style={{
-                          width: '40px',
-                          height: '40px',
+                          width: '50px',
+                          height: '42px',
                           borderRadius: '50%',
                           backgroundColor: '#ccc',
                           marginRight: '10px',

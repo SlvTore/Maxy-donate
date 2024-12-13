@@ -13,6 +13,7 @@ import RegisterPage from './pages/regist.jsx';
 import Pembayaran from './pages/Pembayaran.jsx';
 import Anggota from './components/User/Anggota/data_anggota.jsx';
 import Program from './pages/program.jsx';
+import Informasi from './pages/informasi.jsx';
 
 
 
@@ -32,6 +33,7 @@ function App() {
         <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
         <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
         <Route path='/program' element={<><Navigation /><Program /></>} />
+        <Route path='/informasi' element={<><Nav /><Informasi /></>} />
       </Routes>
     </Router> 
   );
