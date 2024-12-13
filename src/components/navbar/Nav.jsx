@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { Link, Switch, Route } from 'react-router-dom';
+import './nav.css';
 
 function Nav() {
     return (
@@ -31,32 +32,26 @@ function Nav() {
                     </button>
 
                     <div className="collapse navbar-collapse d-flex justify-content-end" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li className="nav-item">
-                                <Link to="/" className="nav-link active" aria-current="page" style={{ color: '#2c3e50' }}>Home</Link>
+                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                            <li className="nav-item me-4">
+                                <Link to="/" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" style={{ color: '#2c3e50' }}>Home</Link>
+                            </li>
+                            <li className="nav-item me-4">
+                                <Link to="/aboutus" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover " aria-current="page" style={{ color: '#2c3e50' }}>Tentang Kami</Link>
                             </li>
                             <li className="nav-item">
-                                <Link to="/aboutus" className="nav-link active" aria-current="page" style={{ color: '#2c3e50' }}>Tentang Kami</Link>
+                                <Link to="/informasi" className="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" aria-current="page" style={{ color: '#2c3e50' }}>informasi</Link>
                             </li>
-                            <li className="nav-item">
-                            <Link to="/informasi" className="nav-link" aria-current="page">informasi</Link>
-                            </li>
-                            
                         </ul>
                     </div>
                 </div>
             </nav>
             
-            <style>
-                {`
-                    .navbar-brand:hover, .nav-link:hover {
-                        color: #e74c3c;  // A vibrant red color for hover effect
-                        text-decoration: none;
-                    }
-                `}
-            </style>
+            
+
         </>
     );
 }
 
 export default Nav;
+

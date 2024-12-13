@@ -138,4 +138,14 @@ html, body {
     color: rgb(255 255 255 / 40%);
     font-size: 13px;
   }
+
+  /* styles.css */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
   

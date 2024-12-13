@@ -24,7 +24,7 @@ function Hero() {
                             "Platform terpercaya untuk donasi mudah dan transparan."
                         </p>
                         <div className="d-grid gap-2 d-md-flex justify-content-md-start">
-                            <Link to="/login" className="btn btn-dark btn-lg px-4 me-md-2">Mari Bangun Masa Depan</Link>
+                            <Link to="/login" className="btn btn-light btn-lg px-4 me-md-2">Mari Bangun Masa Depan</Link>
                             <Link to="/regist" className='btn btn-outline-light btn-lg px-4'>Daftar Sekarang!</Link>
                         </div>
                     </div>

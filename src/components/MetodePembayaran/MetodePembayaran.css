@@ -121,3 +121,13 @@ body, h2, h4, label, button {
 .form-bottom-section {
     margin-top: 1rem; 
 }
+
+/* styles.css */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
