@@ -1,10 +1,11 @@
-/* src/components/MetodePembayaran/MetodePembayaran.jsx */
+/* src/components/Pembayaran/MetodePembayaran/MetodePembayaran.jsx */
 
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; 
-
+import PanduanPembayaran from '../Panduan/PanduanPembayaran';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
+import BackButton from '../Button/BackButton';
 import './MetodePembayaran.css'; 
 
 
@@ -24,14 +25,22 @@ function MetodePembayaran() {
     const donationOptions = [10000, 50000,  500000, 20000,100000, 1000000];
 
     const paymentMethods = [
-        { name: 'BNI', logo: require('../../assets/bni-logo.png') },
-        { name: 'BRI', logo: require('../../assets/bri-logo.png') },
-        { name: 'Mandiri', logo: require('../../assets/mandiri-logo.png') },
-        { name: 'BCA', logo: require('../../assets/bca-logo.png') },
-        { name: 'OVO', logo: require('../../assets/ovo-logo.png') },
-        { name: 'DANA', logo: require('../../assets/dana-logo.png') },
-        { name: 'Bank Mega', logo: require('../../assets/bankmega-logo.png') },
-        { name: 'BSI', logo: require('../../assets/bsi-logo.png') },
+        { name: 'BNI', logo: require('../../../assets/bni-logo.png') },
+        { name: 'BRI', logo: require('../../../assets/bri-logo.png') },
+        { name: 'Mandiri', logo: require('../../../assets/mandiri-logo.png') },
+        { name: 'BCA', logo: require('../../../assets/bca-logo.png') },
+        { name: 'Bank Jateng', logo: require('../../../assets/bankjateng-logo.png') },
+        { name: 'DANA', logo: require('../../../assets/dana-logo.png') },
+        { name: 'Bank Mega', logo: require('../../../assets/bankmega-logo.png') },
+        { name: 'BSI', logo: require('../../../assets/bsi-logo.png') },
+        { name: 'Qris', logo: require('../../../assets/qris-logo.png') },
+        { name: 'Permata Bank', logo: require('../../../assets/permatabank-logo.png') },
+        { name: 'Danamon', logo: require('../../../assets/danamon-logo.png') },
+        { name: 'BTN', logo: require('../../../assets/btn-logo.png') },
+        { name: 'OVO', logo: require('../../../assets/ovo-logo.png') },
+        { name: 'ShopeePay', logo: require('../../../assets/shopeepay-logo.png') },
+        { name: 'Paypal', logo: require('../../../assets/paypal-logo.png') },
+        { name: 'Gopay', logo: require('../../../assets/gopay-logo.png') },
     ];
 
     const handleNominalClick = (amount) => {
@@ -59,26 +68,33 @@ function MetodePembayaran() {
 
         // Data yang akan dikirim ke halaman KonfirmasiPembayaran
         const bank = paymentMethods.find((method) => method.name === selectedMethod); // Menemukan objek bank dari metode yang dipilih
-        const virtualAccount = '87263748567'; 
+        const virtualAccount = '87263748567';
 
-        // Navigasi ke halaman KonfirmasiPembayaran dengan data
-        navigate('/konfirmasi-pembayaran', {
-            state: {
-                bank,
-                amount: nominal,
-                virtualAccount,
-            }
-        });
+        
+        if (selectedMethod === 'Qris') {
+            // Jika metode pembayaran QRIS, arahkan ke halaman KonfirmasiPembayaranQRIS
+            navigate('/konfirmasi-pembayaran-qris', {
+                state: {
+                    bank,
+                    amount: nominal,
+                    virtualAccount,
+                }
+            });
+        } else {
+            // Jika bukan QRIS, arahkan ke halaman KonfirmasiPembayaran biasa
+            navigate('/konfirmasi-pembayaran', {
+                state: {
+                    bank,
+                    amount: nominal,
+                    virtualAccount,
+                }
+            });
+        }
     };
 
     return(
         <>
-            {/* Section Button Back */}
-            <button 
-                className="btn btn-link btn-back"
-                onClick={() => window.history.back()}>
-                <i className="bi bi-chevron-left"></i> back
-            </button>
+            <BackButton />
 
             {/* Section Input Nominal Donasi */}
             <div className="container py-5">
@@ -111,6 +127,7 @@ function MetodePembayaran() {
                         </button>
                     ))}
                 </div>
+
                 {/* Second Row of Donation Options */}
                 <div className="d-flex justify-content-center gap-3">
                     {donationOptions.slice(3).map((amount) => (
@@ -135,8 +152,8 @@ function MetodePembayaran() {
                             <div key={method.name} className="col">
                                 <button
                                     onClick={() => handlePaymentMethodClick(method.name)}
-                                    className={`btn w-100 payment-method-btn ${selectedMethod === method.name ? 'border border-primary' : ''}`}>
-                                <img src={method.logo} alt={method.name} className="img-fluid"/>
+                                    className={`btn w-100 payment-method-btn ${selectedMethod === method.name ? 'selected' : ''}`}>
+                                    <img src={method.logo} alt={method.name} className="img-fluid"/>
                                 </button>
                             </div>
                         ))}
@@ -226,6 +243,8 @@ function MetodePembayaran() {
                 </form>
             </div>
         </div>
+
+        <PanduanPembayaran />
         </>
     );
 };

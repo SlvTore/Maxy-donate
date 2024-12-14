@@ -1,0 +1,54 @@
+/* src/components/Pembayaran/Panduan/PanduanPembayaran.css */
+
+.custom-margin {
+    margin-top: 5rem; 
+    margin-bottom: 3rem; 
+    color: #001D6C;
+}
+
+.payment-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 5rem !important;
+    position: relative; 
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white; 
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+    cursor: pointer;
+    min-height: auto;
+}
+  
+.card {
+    border: none;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+  
+.card-header h5 {
+    margin: 0;
+    flex-grow: 1; 
+    font-size: 1rem;
+}
+  
+.card-header button {
+    color: black; 
+    font-size: 1.2rem; 
+}
+
+.chevron-icon {
+    color: black;
+}
+  
+.card-body {
+    padding: 1rem;
+}
+  

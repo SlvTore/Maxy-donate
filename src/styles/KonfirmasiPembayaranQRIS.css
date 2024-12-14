@@ -1,0 +1,66 @@
+/* src/styles/KonfirmasiPembayaranQRIS.css */
+
+.konfirmasi-pembayaran-qris-page {
+    font-family: 'Inter', sans-serif;
+    background-image: url('../assets/Backround-KonfirmasiPembayaranQris.png');
+    background-size: contain; 
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 60px;
+}
+
+.konfirmasi-pembayaran-qris-page h1, .konfirmasi-pembayaran-qris-page h4 {
+    margin: 0; 
+}
+
+.konfirmasi-pembayaran-qris-page h1 {
+    margin-bottom: 10px; 
+}
+
+.konfirmasi-pembayaran-qris-page h4 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+.konfirmasi-pembayaran-qris-page .container {
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+.konfirmasi-pembayaran-qris-page .konfirmasi-box {
+    background-color: white; 
+    padding: 20px;  
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.konfirmasi-pembayaran-qris-page .time-box {
+    background-color: #EC221F;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    height: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.konfirmasi-pembayaran-qris-page .img-fluid {
+    max-width: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.konfirmasi-pembayaran-qris-page .btn-custom {
+    width: 250px; 
+    height: 40px;
+    background-color: #1768D2;
+    color: white;
+}

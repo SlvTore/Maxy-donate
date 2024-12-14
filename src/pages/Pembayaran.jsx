@@ -1,6 +1,6 @@
 //src/pages/Pembayaran.jsx
 
-import MetodePembayaran from "../components/MetodePembayaran/MetodePembayaran";
+import MetodePembayaran from "../components/Pembayaran/MetodePembayaran/MetodePembayaran";
 
 function Pembayaran() {
     return (

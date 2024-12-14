@@ -1,9 +1,53 @@
-.konfirmasi-box {
+/* src/styles/KonfirmasiPembayaran.css */
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.konfirmasi-pembayaran-page {
+    background-image: url('../assets/Backround-KonfirmasiPembayaran.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    justify-content: center; 
+    align-items: center;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 200px;
+}
+
+.konfirmasi-pembayaran-page h1, .konfirmasi-pembayaran-page h4 {
+    margin: 0; 
+}
+
+.konfirmasi-pembayaran-page h1 {
+    margin-bottom: 10px; 
+}
+
+.konfirmasi-pembayaran-page h4 {
+    margin-top: 0;
+    margin-bottom: 10px; 
+}
+
+/*this*/
+.konfirmasi-pembayaran-page .container {
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%; 
+    max-width: 600px; 
+}
+
+.konfirmasi-pembayaran-page .konfirmasi-box {
+    background-color: white; 
+    padding: 20px;  
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     max-width: 500px;
     margin: 0 auto;
 }
 
-.time-box {
+.konfirmasi-pembayaran-page .time-box {
     background-color: #EC221F;
     color: white;
     padding: 5px 10px;
@@ -14,17 +58,13 @@
     align-items: center;
 }
 
-.konfirmasi-box .img-fluid {
+.konfirmasi-pembayaran-page .konfirmasi-box .img-fluid {
     max-width: 100px; 
     border-radius: 5px;
     border: 1px solid black; 
 }
 
-.konfirmasi-box .img-fluid {
-    max-width: 100px;
-}
-
-.btn-save {
+.konfirmasi-pembayaran-page .btn-save {
     width: 80px; 
     height: 25px;
     display: flex;
@@ -33,19 +73,9 @@
     border-radius: 10px;
 }
 
-.btn-custom {
+.konfirmasi-pembayaran-page .btn-custom {
     width: 250px; 
     height: 40px;
     background-color: #1768D2;
     color: white;
 }
-
-/* styles.css */
-
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-  }
-  
-  body {
-    font-family: 'Inter', sans-serif;
-  }

@@ -16,10 +16,8 @@ import Program from './pages/program.jsx';
 import Informasi from './pages/informasi.jsx';
 import DataPrograms from './pages/dataprograms.jsx';
 import Artikel from './pages/artikel.jsx';
-
-
-
 import KonfirmasiPembayaran from './pages/KonfirmasiPembayaran';
+import KonfirmasiPembayaranQris from './pages/KonfirmasiPembayaranQRIS.jsx';
 
 function App() {
   return (
@@ -32,13 +30,13 @@ function App() {
         <Route path='/aboutus' element={<><Nav /><AboutUs /></>} />
         <Route path='/regist' element={<><Nav /><RegisterPage /></>} />
         <Route path='/Pembayaran' element={<><Pembayaran /></>} />
-        <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
         <Route path='/data_anggota' element={<><Navigation /><Anggota /></>} />
         <Route path='/dataprograms' element={<><Navigation /><DataPrograms /></>} />
         <Route path='/program' element={<><Navigation /><Program /></>} />
         <Route path='/informasi' element={<><Nav /><Informasi /></>} />
         <Route path='/artikel' element={<><Nav /><Artikel /></>} />
-
+        <Route path="/konfirmasi-pembayaran" element={<KonfirmasiPembayaran />} />
+        <Route path="/konfirmasi-pembayaran-qris" element={<KonfirmasiPembayaranQris />} />
       </Routes>
     </Router> 
   );
