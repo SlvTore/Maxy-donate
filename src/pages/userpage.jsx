@@ -1,13 +1,10 @@
 import Navigation from '../components/User/Sidenav/Navigation';
-import Transaksi from '../components/User/Transaksi/Datatransaksi';
+import Datatransaksi from '../components/User/Transaksi/Datatransaksi';
 
 const Userpage = () => {
   return (
     <div>
-      <Navigation />
-      <div className="hide-navbar">
-        <Transaksi />
-      </div>
+        <Datatransaksi />
     </div>
   )
 }

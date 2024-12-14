@@ -1,3 +1,151 @@
-.m-footer {
-    color: #102A3E ;
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: "Euclid Circular A", "Poppins";
+  }
+  
+  body {
+    background: #f8f9fb;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Footer styles */
+  footer {
+    background: #2949A8;
+    color: #f9f9f9;
+    padding: 20px;
+    position: relative;
+    margin-top: auto;
+    width: 100%;
+  }
+  
+  /* Footer article with gradient */
+  footer article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px 50px 40px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #1a0078, #3d1c6e, #2663ff, #b5c5ef );
+    margin-bottom: 0; 
+  }
+  
+  /* Title inside the article */
+  footer article h2 {
+    font-weight: 600;
+    color: rgb(255 255 255 / 70%);
+  }
+  
+  /* Button styling */
+  footer article button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 0 40px 0 44px;
+    width: 100%;
+    background: #0a1536;
+    border: 0;
+    border-radius: 30px;
+    color: #f9f9f9;
+    font-family: inherit;
+    font-size: 20px;
+  }
+  
+  /* Section inside footer */
+  footer section {
+    padding: 0 50px;
+  }
+  
+  /* Styling for top section */
+  section.top {
+    padding-top: 30px;
+    margin-bottom: 48px;
+  }
+  
+  /* Logo in the top section */
+  section.top img {
+    display: block;
+    height: 30px;
+    margin: 0 0 30px;
+  }
+  
+  /* Navigation list */
+  section.top ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  /* Responsive styling for widths > 480px */
+  @media (min-width: 480px) {
+    footer article button {
+      width: 70%;
+    }
+  
+    section.top ul {
+      padding-right: 10%;
+    }
+  }
+  
+  /* Responsive styling for widths > 600px */
+  @media (min-width: 600px) {
+    footer article {
+      flex-direction: row;
+      min-height: 140px;
+      padding: 30px 50px 30px;
+    }
+  
+    footer article button {
+      width: auto;
+      padding: 0 20px 0 24px;
+    }
+  
+    section.top ul {
+      grid-template-columns: repeat(4, 1fr);
+      padding-right: 0;
+    }
+  }
+  
+  /* Links inside the top section */
+  section.top ul li a {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(255 255 255 / 90%);
+  }
+  
+  /* Section heading */
+  section.top h3 {
+    color: rgb(255 255 255 / 40%);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  
+  /* Bottom section of the footer */
+  section.bottom {
+    padding-top: 10px;
+    border-top: 2px solid rgb(255 255 255 / 10%);
+    color: rgb(255 255 255 / 40%);
+    font-size: 13px;
+  }
+
+  /* styles.css */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
 }
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+  

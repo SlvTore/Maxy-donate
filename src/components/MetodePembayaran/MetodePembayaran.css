@@ -1,0 +1,133 @@
+/* src/components/MetodePembayaran/MetodePembayaran.css */
+
+body {
+    background-color: white;
+}
+
+body, h2, h4, label, button {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Section Back button */
+.btn-back {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin-bottom: 1rem; 
+}
+
+
+/* Section input nominal donasi */
+.donation-input {
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 0; 
+}
+
+.donation-input::placeholder {
+    text-align: center; 
+}
+
+
+/* Section pilih donasi */
+.donation-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem; 
+}
+
+.donation-btn {
+    border-radius: 0;
+    border: 1px solid black;
+    width: 140px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.donation-btn-active {
+    background-color: black;
+    color: white;
+}
+
+
+/* MetodePembayaran.css */
+.payment-methods-container {
+    max-width: 650px;
+    width: 100%;
+}
+
+.payment-method-btn {
+    border-radius: 0;
+    border: none; 
+    padding: 0; 
+}
+
+.payment-method-btn img {
+    max-height: 60px;
+    object-fit: contain;
+}
+
+@media (max-width: 576px) {
+    .payment-method-btn {
+        width: 120px; 
+    }
+}
+
+@media (min-width: 576px) {
+    .payment-method-btn {
+        width: 140px; 
+    }
+}
+
+@media (min-width: 768px) {
+    .payment-method-btn {
+        width: 160px;
+    }
+}
+
+
+/* Section Form */
+.form-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto; 
+}
+
+.form-control {
+    border: 1px solid black;
+    border-radius: 1; 
+}
+
+
+/* Styling for the circular checkbox */
+.form-check-input.circle-checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-check-input.circle-checkbox:checked {
+    background-color: black;
+    border-color: black;
+}
+
+
+.form-bottom-section {
+    margin-top: 1rem; 
+}
+
+/* styles.css */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
